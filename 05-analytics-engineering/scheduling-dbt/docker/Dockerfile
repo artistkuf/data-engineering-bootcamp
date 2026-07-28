@@ -1,7 +1,6 @@
-FROM --platform=linux/${TARGETARCH} apache/airflow:3.0.1-python3.9
+FROM --platform=linux/amd64 apache/airflow:3.3.0-python3.10
 
-RUN pip install --no-cache-dir airflow-provider-great-expectations==0.3.0 \
-                               astronomer-cosmos==1.10.0 \
-                               dbt-core==1.9.6 \
-                               dbt-postgres==1.9.0 \
-                               dbt-bigquery==1.9.2
+RUN pip install --no-cache-dir astronomer-cosmos==1.15.0 \
+                               dbt-core==1.12.0 \
+                               dbt-postgres==1.11.0 \
+                               dbt-bigquery==1.12.0
