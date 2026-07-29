@@ -18,7 +18,7 @@ Copy the content in the `env.extra` file to the `.env` file, so that the `.env` 
 
 ```
 AIRFLOW_UID=501
-_PIP_ADDITIONAL_REQUIREMENTS=astronomer-cosmos==1.5.1 dbt-core==1.8.4 dbt-bigquery==1.8.2
+_PIP_ADDITIONAL_REQUIREMENTS=astronomer-cosmos==1.15.0 dbt-core==1.12.0 dbt-bigquery==1.12.0
 ```
 
 ## BigQuery Connection
