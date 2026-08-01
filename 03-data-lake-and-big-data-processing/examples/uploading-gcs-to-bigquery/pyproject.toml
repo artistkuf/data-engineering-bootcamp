@@ -1,19 +1,21 @@
-[tool.poetry]
+[project]
 name = "uploading-gcs-to-bigquery"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = [
+    {name = "zkan",email = "kan@odds.team"}
+]
 readme = "README.md"
-packages = [{include = "uploading_gcs_to_bigquery"}]
+requires-python = ">=3.12,<3.15"
+dependencies = [
+    "google-cloud-storage (>=3.13.0,<4.0.0)",
+    "google-cloud-bigquery (>=3.42.3,<4.0.0)"
+]
+
+[tool.poetry]
 package-mode = false
-
-[tool.poetry.dependencies]
-python = "^3.11"
-google-cloud-storage = "^2.18.2"
-google-cloud-bigquery = "^3.25.0"
-
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
