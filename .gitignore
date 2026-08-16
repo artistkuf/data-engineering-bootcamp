@@ -2,7 +2,6 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=python
 
 # Ignore Json key
-00-bootcamp-project/
 deb-loading-data-to-bigquery.json
 
 ### Python ###
