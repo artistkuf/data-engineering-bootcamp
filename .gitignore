@@ -3,7 +3,7 @@
 
 # Ignore Json key
 00-bootcamp-project/
-load_data_to_bigquery.py
+deb-loading-data-to-bigquery.json
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
