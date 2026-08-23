@@ -2,7 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructField, StructType, StringType, TimestampType
 
 
-KEYFILE_PATH = "/opt/spark/pyspark/YOUR_KEYFILE.json"
+KEYFILE_PATH = "/opt/spark/pyspark/deb-uploading-files-to-gcs.json"
 
 # GCS Connector Path (on Spark): /opt/spark/jars/gcs-connector-hadoop3-latest.jar
 # GCS Connector Path (on Airflow): /home/airflow/.local/lib/python3.9/site-packages/pyspark/jars/gcs-connector-hadoop3-latest.jar
@@ -44,28 +44,29 @@ spark = SparkSession.builder.appName("demo_gcs") \
 #     StructField("address_id", StringType()),
 # ])
 
-GCS_FILE_PATH = "gs://YOUR_BUCKET_PATH_TO_CSV_FILE"
+data = [
+    ("James", "", "Smith", "1991-04-01", "M", 3000),
+    ("Michael", "Rose", "", "2000-05-19", "M", 4000),
+    ("Maria", "Anne", "Jones", "1967-12-01", "F", 4000),
+    ("Jen", "Mary", "Brown", "1980-02-17", "F", -1),
+]
+columns = [
+    "firstname",
+    "middlename",
+    "lastname",
+    "dob",
+    "gender",
+    "salary",
+]
+df = spark.createDataFrame(data=data, schema=columns)
 
-df = spark.read \
-    .option("header", True) \
-    .option("inferSchema", True) \
-    .csv(GCS_FILE_PATH)
-
-# df = spark.read \
-#     .option("header", True) \
-#     .schema(struct_schema) \
-#     .csv(GCS_FILE_PATH)
-
-df.show()
-df.printSchema()
-
-df.createOrReplaceTempView("YOUR_TABLE_NAME")
+df.createOrReplaceTempView("hello")
 result = spark.sql("""
     select
         *
 
-    from YOUR_TABLE_NAME
+    from hello
 """)
 
-OUTPUT_PATH = "gs://YOUR_BUCKET_PATH_TO_OUTPUT"
+OUTPUT_PATH = "gs://wasin-skooldio-project-bucket/output"
 result.write.mode("overwrite").parquet(OUTPUT_PATH)

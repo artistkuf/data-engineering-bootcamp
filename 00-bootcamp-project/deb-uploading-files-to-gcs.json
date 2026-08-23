@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "deb-skooldio-project",
+  "private_key_id": "59e3d6717765b535eae0ac7bc10732a8a49b36cf",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCmz27aMDNW+T/1\nQcHsQUX6oxnA9Rve6xhB959+JWMrVU/7LzaRTr6/73KBKnI6RvWrw8P9XPwnnnPr\ntxbihmGjGHdEMSvrKEw7XH6KG3FUc6twRq50WTJ2WCF0EoXCAuzi5Lzy6rBUI9ug\nBwXWM0zSJeZmdyYZOI/QDiEe3xB8cmeS3Suh90rWw/o9Pcpnn3br5LoL+K5qZ3Hu\nIFatzYUpvJhcfhmLzEyuVOrOFJIwpEzLB9tsuYNzFwg0e51rA5AqERL4oMeQf/qJ\n6zp9julkPmjoVa4Z3v4RZw4gXR9U2T+S1Z8jYG44ILrNItqymIygh4F8gSKnYDs2\nNOc8G/k/AgMBAAECggEARcqsOqXIFS+bzuWAWXTF7qOm9tCWpKIAODl+hazm3Q6I\ntDOAxTMJJAzu/5Pezvs5dnAl5C+vYHQvVAP6kzReTXrDC8j28yCdJIkCeI4a0JbE\nt+kavJtFPbaJ6KKHTDElI5lIZOpEdC+8iCvoCULVdWdeCqj3S74ajZYbzWrO3wHh\nuIBvrmoRL1idi60pTkAn0ZnhaMislrrDaz6/zzelwluRYmPA1amwNX4cwrrqQ2I7\nk6cBGAlOjDcErGnint/1P5eB1c+8ThijxzWkcYSJxCUyJTCaEOp1aqAyN1ZpWb07\nWowOJ7DJfPGTVNODTRCRHMgTuj3o8ILUcBajHt3oAQKBgQDXjnmSkk/SJ0dQ5pLm\nZZWK1IjSESAAhcrcpvLNNzMhZF7ETMkX36Kj90jDwQmRu4oslMa/CEijEa5F4Rv1\nDwjpa2H0QKeUbJb5iZWypCoPHTUipgBabkfHZIuBxRb0JxbSYEuEls+ucfNi6lyP\n+YkLiE6EKyIgHRbIr9haynQePwKBgQDGG5j2UoXTy0rMLb/ej6Mqs9GW6pT1wBgj\nPre46RISQ/Qk+D5n8n9GDqMeCv31h/52f6aIcL4LY0MIRzZwEsJCXZ4KPcQTTiN3\n++B1Eo9bolq9Z52FjI1VLQxGkCYVN+441390LfFsoMQjzfJlKGMjAo0pEIZhEzuy\nDw2IsgdlAQKBgF/D0IcpsYSwJqLujT0GzJVNLywEp68TwbieAyjg6TpgmSmk44JT\nvLIT3qP5UwMHyq9buaCNUZgA9ufcxsrszwzExFP7lXf/dmOOmI8xF+53D3BBR87l\nR8ZyCPiyUyxNYXo9hc92IPZjcbn0XQMp3ZTeDePyNcsGoWSvmvNbFpOJAoGBAIi0\ncpFH0OGd3zeWOliydb356B9kMPaEYCOyG8WVz8qa6da5FxdT10/Yueb5XtYXyhir\nbZepdPsWvCLyQTaFO1fgkjYu+Sb5PLCHNxSSgiqRllwtLB4EJ2MnetkWj7EEr3a5\n/lGFgpubNL4gV6xGemKmWBKGPLSwOPleOdCiSUgBAoGAYWhi3Fv3JhMjA7TYRElb\n4kbCirUzMmHOcIhhYlL4vN1zm/v/pHEhkbLx8ZvmfB9ziQEBHzWVJXO/yI2JfImg\nXLzyaIC7U7n0Q6zsZAzioTVciRV5pHehZclH8euMv7RUGOBq6eOUjRwHjlPzfBfK\nukxPL3G0D6ODehdaeICCArE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "deb-uploading-files-to-gcs@deb-skooldio-project.iam.gserviceaccount.com",
+  "client_id": "103940115099530914118",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/deb-uploading-files-to-gcs%40deb-skooldio-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

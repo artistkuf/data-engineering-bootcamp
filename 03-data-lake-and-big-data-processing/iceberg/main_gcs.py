@@ -48,7 +48,7 @@ iceberg_catalog = catalog.load_catalog(
         "gcs.oauth2.token-expires-at": access_token.expiry.timestamp(),
         "gcs.project-id": GCP_PROJECT_ID,
         "gcs.oauth2.token": access_token.token,
-        "gcs.default-bucket-location": f"gs://{GCS_BUCKET}",
+        "gcs.default-bucket-location": f"gs://{wasin-deb_pyiceberg_workshop}",
         "warehouse": f"gs://{GCS_BUCKET}",
     }
 )
