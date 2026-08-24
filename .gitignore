@@ -197,3 +197,5 @@ data/
 
 # DEB dataengineercafe keyfiles
 dataengineercafe-*.json
+*.json
+deb-uploading-files-to-gcs.json
