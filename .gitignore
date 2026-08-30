@@ -197,3 +197,4 @@ data/
 
 dataengineercafe-*.json
 *.json
+*gcs.json*
